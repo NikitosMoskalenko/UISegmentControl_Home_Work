@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		1CAA9EB723F045DD00D3BBE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAA9EB623F045DD00D3BBE6 /* AppDelegate.swift */; };
 		1CAA9EB923F045DD00D3BBE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAA9EB823F045DD00D3BBE6 /* SceneDelegate.swift */; };
-		1CAA9EBB23F045DD00D3BBE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAA9EBA23F045DD00D3BBE6 /* ViewController.swift */; };
+		1CAA9EBB23F045DD00D3BBE6 /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAA9EBA23F045DD00D3BBE6 /* SelectionViewController.swift */; };
 		1CAA9EBE23F045DD00D3BBE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CAA9EBC23F045DD00D3BBE6 /* Main.storyboard */; };
 		1CAA9EC023F045DD00D3BBE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CAA9EBF23F045DD00D3BBE6 /* Assets.xcassets */; };
 		1CAA9EC323F045DD00D3BBE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CAA9EC123F045DD00D3BBE6 /* LaunchScreen.storyboard */; };
+		1CAA9ED723F066A100D3BBE6 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAA9ED623F066A100D3BBE6 /* BasketViewController.swift */; };
+		1CF7EAC023F98D08006CE9FA /* FillFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF7EABF23F98D08006CE9FA /* FillFormViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1CAA9EB323F045DD00D3BBE6 /* HomeWorkUISegmentControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWorkUISegmentControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CAA9EB623F045DD00D3BBE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CAA9EB823F045DD00D3BBE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1CAA9EBA23F045DD00D3BBE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1CAA9EBA23F045DD00D3BBE6 /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
 		1CAA9EBD23F045DD00D3BBE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1CAA9EBF23F045DD00D3BBE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CAA9EC223F045DD00D3BBE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CAA9EC423F045DD00D3BBE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CAA9ED623F066A100D3BBE6 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
+		1CF7EABF23F98D08006CE9FA /* FillFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillFormViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,127 @@
 			children = (
 				1CAA9EB623F045DD00D3BBE6 /* AppDelegate.swift */,
 				1CAA9EB823F045DD00D3BBE6 /* SceneDelegate.swift */,
-				1CAA9EBA23F045DD00D3BBE6 /* ViewController.swift */,
-				1CAA9EBC23F045DD00D3BBE6 /* Main.storyboard */,
-				1CAA9EBF23F045DD00D3BBE6 /* Assets.xcassets */,
-				1CAA9EC123F045DD00D3BBE6 /* LaunchScreen.storyboard */,
-				1CAA9EC423F045DD00D3BBE6 /* Info.plist */,
+				1CAA9ECA23F0463100D3BBE6 /* SelectionViewController */,
+				1CAA9ED223F0629C00D3BBE6 /* BasketViewController */,
+				1CF7EABB23F98CCE006CE9FA /* FillForm */,
+				1CAA9ECF23F04E3000D3BBE6 /* Storyboard */,
+				1CAA9ECE23F04E2900D3BBE6 /* Supports */,
 			);
 			path = HomeWorkUISegmentControl;
+			sourceTree = "<group>";
+		};
+		1CAA9ECA23F0463100D3BBE6 /* SelectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1CAA9ECD23F04DD500D3BBE6 /* Controller */,
+				1CAA9ECC23F04DCF00D3BBE6 /* View */,
+				1CAA9ECB23F04DC800D3BBE6 /* Model */,
+			);
+			path = SelectionViewController;
+			sourceTree = "<group>";
+		};
+		1CAA9ECB23F04DC800D3BBE6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1CAA9ECC23F04DCF00D3BBE6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1CAA9ECD23F04DD500D3BBE6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1CAA9EBA23F045DD00D3BBE6 /* SelectionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1CAA9ECE23F04E2900D3BBE6 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				1CAA9EBF23F045DD00D3BBE6 /* Assets.xcassets */,
+				1CAA9EC423F045DD00D3BBE6 /* Info.plist */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		1CAA9ECF23F04E3000D3BBE6 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1CAA9EBC23F045DD00D3BBE6 /* Main.storyboard */,
+				1CAA9EC123F045DD00D3BBE6 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		1CAA9ED223F0629C00D3BBE6 /* BasketViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1CAA9ED523F062B500D3BBE6 /* Controller */,
+				1CAA9ED423F062AF00D3BBE6 /* View */,
+				1CAA9ED323F062A700D3BBE6 /* Model */,
+			);
+			path = BasketViewController;
+			sourceTree = "<group>";
+		};
+		1CAA9ED323F062A700D3BBE6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1CAA9ED423F062AF00D3BBE6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1CAA9ED523F062B500D3BBE6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1CAA9ED623F066A100D3BBE6 /* BasketViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1CF7EABB23F98CCE006CE9FA /* FillForm */ = {
+			isa = PBXGroup;
+			children = (
+				1CF7EABE23F98CEA006CE9FA /* Comtroller */,
+				1CF7EABD23F98CE5006CE9FA /* View */,
+				1CF7EABC23F98CDC006CE9FA /* Model */,
+			);
+			path = FillForm;
+			sourceTree = "<group>";
+		};
+		1CF7EABC23F98CDC006CE9FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1CF7EABD23F98CE5006CE9FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1CF7EABE23F98CEA006CE9FA /* Comtroller */ = {
+			isa = PBXGroup;
+			children = (
+				1CF7EABF23F98D08006CE9FA /* FillFormViewController.swift */,
+			);
+			path = Comtroller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +256,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CAA9EBB23F045DD00D3BBE6 /* ViewController.swift in Sources */,
+				1CF7EAC023F98D08006CE9FA /* FillFormViewController.swift in Sources */,
+				1CAA9EBB23F045DD00D3BBE6 /* SelectionViewController.swift in Sources */,
 				1CAA9EB723F045DD00D3BBE6 /* AppDelegate.swift in Sources */,
+				1CAA9ED723F066A100D3BBE6 /* BasketViewController.swift in Sources */,
 				1CAA9EB923F045DD00D3BBE6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +406,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7USD4UF8Y2;
-				INFOPLIST_FILE = HomeWorkUISegmentControl/Info.plist;
+				INFOPLIST_FILE = HomeWorkUISegmentControl/Supports/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +424,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7USD4UF8Y2;
-				INFOPLIST_FILE = HomeWorkUISegmentControl/Info.plist;
+				INFOPLIST_FILE = HomeWorkUISegmentControl/Supports/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
